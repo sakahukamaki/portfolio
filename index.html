@@ -29,7 +29,7 @@
       <div v-show="show['aboutme']" class="direction">
         プログラマ。フットワークは軽い方。<br>
         猫と暮らしています。<br>
-        島根県出身、大阪や鳥取を経由して千葉県在住。<br>
+        島根県出身、関東在住。<br>
         インターネット上のIDは主に@sakahukamaki。<br>
         2014年末からRailsを用いた開発の仕事をしています。<br>
         猫を飼っています。<br>
@@ -56,6 +56,8 @@
           <li>料金計算システム</li>
           <li>決済API開発</li>
           <li>Rails5.0から6.1へのアップデート</li>
+          <li>SNS運用保守（Rails5～7.x）</li>
+          <li>シャレトンぽすと実装・運用</li>
         </ul>
       </div>
       <h1 @click="toggle('pastime')">
@@ -69,6 +71,19 @@
           <li><a href="https://sakahukamaki.github.io/cattower/tools/a3-linkskills.html" target="_blank">A3!リンクスキルチェッカー</a></li>
           <li><a href="https://origamike.web.fc2.com/" target="_blank">アンソロジー企画サイト</a>（スタジオ五組オリジナルアニメ「刀使ノ巫女」より）</li>
           <li><a href="https://dzsgnovel.web.fc2.com/" target="_blank">アンソロジー企画サイト</a>（ゲーム「文豪とアルケミスト」より）</li>
+          <li><a href="https://shareton-post.lolipop.io/" target="_blank">シャレトンぽすと</a></li>
+        </ul>
+      </div>
+      <h1 @click="toggle('stage')">
+        <span v-if="show['stage']">▲</span>
+        <span v-if="!show['stage']">▼</span>
+        登壇
+      </h1>
+      <div v-show="show['stage']" class="direction">
+        登壇履歴
+        <ul>
+          <li><a href="https://youtu.be/SHZWrJwXq1w?si=6OUMRFIzEyvfOwQe" target="_blank">推し活としてのrails new / Kaigi on Rails 2024</a></li>
+          <li><a href="https://www.youtube.com/live/VOov1nyQTdw?si=lOyUbIUVjjmRB28P&t=15591" target="_blank">Ruby合宿をはじめとしたプログラミング教育を受けたプログラマは、15年後どう成長したか</a></li>
         </ul>
       </div>
       <h1 @click="toggle('qa')">
